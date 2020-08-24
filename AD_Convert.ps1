@@ -6,7 +6,6 @@ foreach ($U in $User)
 {
     $Upro = Get-ADUser -Identity $U | Select UserPrincipalName,SamAccountName
 
-    
     $NewUPN = ($Upro.UserPrincipalName).ToLower()
     $NewSAM = ($Upro.SamAccountName).ToLower()
 
